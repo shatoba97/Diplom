@@ -1,0 +1,348 @@
+.navbar {
+
+      margin-top: 0;
+      background-color: rgba(0, 0, 0, 0.4) !important;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      
+      letter-spacing: 4px;
+      
+      font-family: Montserrat, sans-serif;
+  }
+a.btn {
+background-color: transparent !important;
+      
+}
+
+.dropdown-menu{
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.navbar-default .navbar-toggle {
+      border-color: transparent;
+      
+}
+.conteiner{
+  position: absolute;
+    left: 30px;
+    top: 100px;
+    max-height: 100%;
+}
+.line{
+  height:100%;
+  position: fixed;
+  width: 1px;
+  right: 360px;
+  border:none;
+  border-left:2px solid black;
+  background-color: white;
+  top:60px;
+
+}
+.avtoriz{
+  position: fixed;
+  right: 40px;
+  top: 100px;
+}
+*{
+  box-sizing:border-box;
+}
+.avtoriz form{
+  max-width: 600px;
+  margin:0 auto;
+}
+.avtoriz form > div{
+  position: relative;
+  background:white;
+  border-bottom: 1px solid #ccc;
+}
+.avtoriz form > div > label{
+  opacity: 0.3;
+  font-weight: bold;
+  position: absolute;
+  top:20px;
+  left:20px;
+}
+.avtoriz form > div > input[type="text"],
+.avtoriz form > div > input[type="email"],
+.avtoriz form > div > input[type="password"]{
+  width: 100%;
+  border: 0;
+  padding: 20px 20px 20px 50px;
+  background: #eee;
+}
+.avtoriz form > div > input[type="text"]:focus,
+.avtoriz form > div > input[type="email"]:focus,
+.avtoriz form > div > input[type="password"]:focus{
+  outline: 0;
+  background: white;
+}
+.avtoriz form > div > input[type="text"]:focus+label,
+.avtoriz form > div > input[type="email"]:focus+label,
+.avtoriz form > div > input[type="password"]:focus+label{
+  opacity: 0;
+}
+.avtoriz form > div > input[type="text"]:valid,
+.avtoriz form > div > input[type="email"]:valid,
+.avtoriz form > div > input[type="password"]:valid{
+  background: url(../pic/check.jpg);﻿
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+.avtoriz form > div > input[type="text"]:valid+label,
+.avtoriz form > div > input[type="email"]:valid+label,
+.avtoriz form > div > input[type="password"]:valid+label{
+  opacity:0;
+}
+.avtoriz form > div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
+.avtoriz form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
+.avtoriz form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown){
+  background: pink;
+  
+}
+.avtoriz form > div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown)+label,
+.avtoriz form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown)+label,
+.avtoriz form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown)+label{
+  opacity: 0;
+}
+.avtoriz form > div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown)~ .requirements,
+.avtoriz form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown)~ .requirements,
+.avtoriz form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown)~ .requirements{
+  max-height: 200px;
+  padding: 0 30px 20px 50px;
+}
+.avtoriz form > div .requirements{
+  padding: 0 30px 0 50px;
+  color: #999;
+  max-height: 0; 
+  transition: 0.28s;
+  overflow: hidden;
+  color: red;
+  font-style: italic;
+}
+.avtoriz form input[type="submit"]{
+  display: block;
+  width: 100%;
+  
+  background: #41D873;
+  color: white;
+  border: 0;
+  padding: 20px;
+  font-size: 1.5rem;
+  right: 20px;
+}
+.conteiner{
+  margin-left: 20%;
+}
+
+.conteiner input[type="text"]{
+  width: 500px;
+  height: 150px;
+  border-radius: 3px;
+  outline: none;
+  color: black;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px #000000;
+  border-radius: 10px;
+  display: flex;
+
+
+
+}
+.conteiner form input[type="submit"]{
+  display: inline-block;
+  width: 200px;
+  background: #41D873;
+  color: white;
+  border: 0;
+  font-size: 1.5rem;
+  right: 20px;
+  margin-left:15px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  border-radius: 10px;
+  height: 40px;
+  font-size: 1.8rem;
+}
+
+
+.group_for_answer{
+  display: inline-block;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+.group_for_answer .answer{
+  width: 200px;
+  height: 40px;
+  background: #41D873;
+  color: white;
+  border: 0;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.conteiner .the_end{
+  margin-left: 3%;
+}
+
+
+@media screen and (max-width: 1160px){
+  .line{
+    
+    visibility: hidden;
+  }
+
+  .avtoriz{
+    visibility: hidden;
+  }
+}
+
+.glyphicon.glyphicon-heart{
+  color:red;
+}
+ul.nav-bar{
+  margin-top: 20px;
+}
+a {
+    text-decoration: none!important;
+    color: #ffffff!important;
+    -webkit-transition: all 0.11s ease 0s;
+    -moz-transition: all 0.11s ease 0s;
+    -o-transition: all 0.11s ease 0s;
+}
+a:hover{
+  color: rgb(0, 174, 239)!important;
+
+}
+ol, li {
+    margin: 0 0 0 17px;
+    list-style: none;
+    margin-bottom: 2%;
+    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAYAAADaxo44AAAAHElEQVQIW2NkWPf+PwMWwDiwEticBBRjxCHOAAA8og+xjYX3KgAAAABJRU5ErkJggg==);
+}
+
+
+
+.footer{
+  font-family: 'Playfair Display', serif;
+  color:#FCFBE3;
+  text-align:center;
+  position: absolute;
+  background-color: rgba(3, 78, 84, 1);
+  width: 100%; 
+  top: 100%;
+  height: 80px;
+  margin-top: 70px;
+  
+  
+}
+
+.footer .wow{
+  left:50%;
+}
+body {
+  background: url(../pic/newback.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+.sm{
+  position: absolute;
+  top: 80px;
+  left: 85px;
+  margin-bottom: 20px;
+  border-radius: 10px; 
+  width: 60px;
+  height: 60px;
+
+}
+.left img, .right img{
+ 
+  width: 60px;
+  height: 60px;
+}
+.left,.right{
+  background-color: transparent;
+  border-color: transparent;
+  
+}
+button,input[type="submit"]{
+  outline: none;
+}
+@media screen and (max-width: 993px){
+  .footer{
+    top: 120%;
+  }
+  .conteiner{
+    margin-left: 10%;
+  }
+
+  .conteiner input[type="text"]{
+    margin-top: 80px;
+
+  }
+
+  .sm{
+    left: 15px;
+  }
+  meter{
+    -moz-transform: rotate(0deg);  /* Firefox */
+    -o-transform: rotate(0deg);  /* Opera */
+    -webkit-transform: rotate(0deg);  /* Safari y Chrome */
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+  }
+  meter[id="tickmarks1"]{
+    top: 80px;
+    left: 85px;
+    
+  }
+  meter[id="tickmarks"]{
+    top: 110px;
+    left: 85px;
+    
+  }
+  
+}
+@media screen and (min-width: 992px){
+  meter{
+    -moz-transform: rotate(2700deg);  /* Firefox */
+    -o-transform: rotate(270deg);  /* Opera */
+    -webkit-transform: rotate(270deg);  /* Safari y Chrome */
+    position: absolute;
+    top: 300px;
+    margin: 5px;
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+  }
+  meter[id="tickmarks1"]{
+    margin-left: -65px;
+  }
+}
+
+
+
+
+/*input[type=range]::-webkit-slider-thumb {
+  border-left: 1px #206AA3 solid;
+}
+input[type=range]::-webkit-slider-thumb:after input[type=range]::-webkit-slider-thumb:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 1px;
+    background: none repeat scroll 0% 0% #E8E7E6;
+    left: 27px;
+    top: 10px;
+}*/
