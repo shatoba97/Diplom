@@ -6,147 +6,43 @@
 <link rel="shortcut icon" href="pic/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/main.css" type="text/css" />
 <meta name = "viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/slider.css">
-<script src="js/float-panel.js"></script>
-    
-
-<nav class="navbar navbar-default navbar-fixed-top"  >
-  <div class="container" >
-    <div class="navbar-header" >
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">Test</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right btn-group menu_toogl">
-        <li >
-          
-          <a href="#services" class="btn">Тeсты</a>
-            <!-- <ul class="dropdown-menu" role="menu">
-              <li >Математика</li>
-              <li>Русский язык</li>
-              <li>ИЗО</li>
-              <li>Черчение</li>
-            </ul> -->
-        </li>
-        <li><a href="#services" class="btn">Справочна информация</a></li>
-        <!--<li><a href="http://176.112.202.53:57772/jaankari/chat/public/index.html"> CHAT </a> </li>-->
-      </ul>
-    </div>
-  </div>
-</nav>
-<script type="text/javascript">
-  $('.navbar-toggle').on('click',function () {
-    $('#myNavbar').slideToggle(1000);
-  })
-</script>
-
-</head>
-
-<body>
-    <div class="line"></div> 
-    <div class="smile">
-            <form>
-              <div >
-                <img class="sm" src="pic/cool_smile.jpg">
-              </div>
-              <div class="range">
+<script src="./js/routeTests.js"></script>
+<nav class="navbar ">
+        <div class="btn-group">
+              <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Тесты
+              </button>
+              <div class="dropdown-menu">
+                <button type="button" class="dropdown-item test1"  aria-haspopup="true" aria-expanded="false">
+                  Test#1
+                </button>
+                <button type="button" class="dropdown-item test2 "  aria-haspopup="true" aria-expanded="false">
+                  Test#2
+                </button>
+                <button type="button" class="dropdown-item test3 "  aria-haspopup="true" aria-expanded="false">
+                  Test#3
+                </button>
                 
-                  
-                    <meter id="tickmarks1" min="0" low="4" high="7" max="10" optimum="11" title="GB" value="4"></meter> 
-                  
-                  
-                    <meter id="tickmarks" min="0" low="3" high="7" max="10" optimum="11" value="5"></meter>
-                  
-                </div>
-                <datalist id="tickmarks">
-                  <option value="0" label="0%">
-                  <option value="1" label="10%">
-                  <option value="2" label="20%">
-                  <option value="3" label="30%">
-                  <option value="4" label="40%">
-                  <option value="5" label="50%">
-                  <option value="6" label="60%">
-                  <option value="7" label="70%">
-                  <option value="8" label="80%">
-                  <option value="9" label="90%">
-                  <option value="10" label="100%">
-                </datalist>
               </div>
-            </form>
-      </div>
-    <div class="conteiner">
-      
-        <form action="#0" class="server_text_button">
-          <div class="row">
-            <div class="col-md-8">
-              <input type="text" class=" task">
-            </div>
-          </div>
-          
-        </form>
-        <div class="group_for_answer">
-            <button class="left"><img src="pic/1600.png"></button>
-            <input class="answer" type="submit">
-            <button class="right"><img src="pic/16001.png"></button>
+              <button type="button" class="btn "  aria-haspopup="true" aria-expanded="false">
+                Справочна информация
+              </button>
         </div>
-        
-        <input type="text" class="result">
-        <form class="the_end">
-          <div class="row">
-            <div class="col-xs-1">
-              <input type="submit" class="ok" value="Готово">
-            </div>
-            <div class="col-xs-1 col-xs-offset-6">
-              <input type="submit" class="back col-xs-2" value="К началу">
-            </div>
-          </div>
-        </form>
-  
-    </div>
-
+    </nav>
+</head>
+<body >
     
-    
-    <div class="avtoriz ">
-      <form action="#0">
-        <div>
-          <input required type="text" id="name" name="name" placeholder=" ">
-          <label for="name">Name</label>
-        </div>
-        <div>
-          <input required type="email" id="email" name="email" placeholder=" ">
-          <label for="email">Email</label>
-          <div class="requirements">Must be a valid email address</div> 
-        </div>
-        <div>
-          <input required type="password" id="password" name="password" placeholder=" ">
-          <label for="password">Passwrd</label>
-          <div class="requirements">Must be a valid password</div> 
-        </div>
-        <input type="submit" value="Sign in"> 
-      </form>
-    </div>
-      <div class="footer">
-        <p class="wow"> Сделано с <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>  </p>
-      </div> 
-
-
-
-  
+  <div class="Test1">
+  </div>
 </body>
 </html>

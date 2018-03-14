@@ -1,0 +1,11 @@
+$(document).ready(function(){
+	$(".test1").click(function(){
+		$('.Test1').load('html/test1.html');
+	});
+	$(".test2").click(function(){
+		$('.Test1').load('html/test2.html');
+	});
+	$(".test3").click(function(){
+		$('.Test1').load('html/test3.html');
+	});
+})
