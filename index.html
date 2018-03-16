@@ -17,32 +17,78 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/slider.css">
 <script src="./js/routeTests.js"></script>
-<nav class="navbar ">
-        <div class="btn-group">
-              <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<link href="css/page.css" rel="stylesheet" />
+<link href="css/super-panel.css" rel="stylesheet" />
+<script src="js/super-panel.js"></script>
+    <header>
+      <a href="" class="logo">Лого</a>
+      <nav>
+          <ul class="topmenu">
+            <li><a href="">Главная</a></li>
+            <li><button type="button" class="btn main">
                 Тесты
               </button>
-              <div class="dropdown-menu">
-                <button type="button" class="dropdown-item test1"  aria-haspopup="true" aria-expanded="false">
-                  Test#1
-                </button>
-                <button type="button" class="dropdown-item test2 "  aria-haspopup="true" aria-expanded="false">
-                  Test#2
-                </button>
-                <button type="button" class="dropdown-item test3 "  aria-haspopup="true" aria-expanded="false">
-                  Test#3
-                </button>
-                
-              </div>
-              <button type="button" class="btn "  aria-haspopup="true" aria-expanded="false">
+            
+              <ul class="submenu">
+                    <li><button type="button" class="test1 btn">
+                        Test#1
+                      </button></li>
+                      <li><button type="button" class="test2 btn">
+                        Test#2
+                      </button></li>
+                      <li><button type="button" class="test3 btn">
+                        Test#3
+                      </button></li>
+              </ul>
+            </li>
+            
+            <li><button type="button" class="btn "  >
                 Справочна информация
-              </button>
+            </button></li>
+            <li><button type="button" class="test3 btn">
+                Контакты
+              </button></li>
+              <span data-panel="panel1" class="panel-button"></span>
+          </ul>
+        </nav>
+    </header>
+    <div id="panel1">
+         <div id="vertical-nav">
+            <ul class="topmen">
+                  <ul><a href="">Главная</a></ul>
+                
+                  <ul>
+                    <button type="button" class="bt mai">
+                      Тесты
+                    </button>
+                  
+                    <li class="submen">
+                          <ul><button type="button" class="test1 bt">
+                              Test#1
+                            </button></ul>
+                            <ul><button type="button" class="test2 bt">
+                              Test#2
+                            </button></ul>
+                            <ul><button type="button" class="test3 bt">
+                              Test#3
+                            </button></ul>
+                    </li>
+                  </ul>
+                
+                
+                  <ul><button type="button" class="bt "  >
+                    Справочна информация
+                      </button></ul>
+                <ul><button type="button" class="friend bt">
+                    Контакты
+                  </button></ul>
+              </ul>
         </div>
-    </nav>
-</head>
+    </div>
 <body >
     
   <div class="Test1">
+      <script>$('.Test1').load('html/test1.html');</script>
   </div>
 </body>
 </html>
