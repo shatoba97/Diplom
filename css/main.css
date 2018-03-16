@@ -1,54 +1,76 @@
-.navbar {
-  margin-top: 0;
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  z-index: 9999;
-  border: 0;
-  position: fixed !important;
-  width: 100% !important;
-  height: 60px !important;
- }
+header {
+  background: #061213;
+  text-align: center;
+} 
+nav {
+  display: table;
+  margin: 0 auto auto 25%;
+  height: 50px;
+}
 
-.btn{
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  font-size: 14px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+.topmenu > li > .btn {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fcfcfc;
   background-color: transparent !important;
-  font-size: 20px !important;
-  margin-right: 5% !important;
   
 }
-
-div.btn-group{
-  margin-left: 30px !important;
-  margin-top:5px;
-  position: absolute !important;
-  margin-right: 5% !important;
-  right: 10%;
+.topmenu li .btn:hover { color: #D5B45B; }
+.submenu-link:after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px;
 }
-div.btn-group button{
-  display: inline;
-  border-color: none !important;
-  color:rgba(169, 169, 169, 1) !important;   
+.submenu {
+  background:  rgba(6, 18, 19, 0.4);;
+  display: block;
+  margin-bottom: 15px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 100%;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
 }
-.btn:hover{
+.submenu .btn {
   color: white;
+  text-align: center;
+  background-color: transparent !important;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
 }
-.btn.focus, .btn:focus {
-  box-shadow: 0 0 0 0.0 rgba(0,0,0,0) !important;
-  color: white!important;
+.submenu li:last-child .btn { border-bottom: none; }
+
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
 }
 
-.btn.hover, .btn:hover{
-  color: white!important;
-}
-.dropdown-menu{
-  background-color: rgba(0, 0, 0, 0.4) !important;
-}
-a.dropdown-item{
-  color:rgba(169, 169, 169, 1) !important; 
-}
-a.dropdown-item:hover{
-  background-color: rgba(109, 109, 109, 0.4) !important;
-  color: white!important;
-
-}
 .line{
   height:100%;
   position: fixed;
@@ -57,7 +79,7 @@ a.dropdown-item:hover{
   border:none;
   border-left:2px solid black;
   background-color: white;
-  top:60px;
+  top:74px;
 
 }
 .avtoriz{
@@ -106,7 +128,7 @@ a.dropdown-item:hover{
 .avtoriz form > div > input[type="text"]:valid,
 .avtoriz form > div > input[type="email"]:valid,
 .avtoriz form > div > input[type="password"]:valid{
-  background: url(../pic/check.jpg);﻿
+  background: url(../pic/check.jpg);
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: 10px 10px;
@@ -229,32 +251,6 @@ div.smile{
   }
 }
 
-.glyphicon.glyphicon-heart{
-  color:red;
-}
-ul.nav-bar{
-  margin-top: 20px;
-}
-a {
-    text-decoration: none!important;
-    color: #ffffff!important;
-    -webkit-transition: all 0.11s ease 0s;
-    -moz-transition: all 0.11s ease 0s;
-    -o-transition: all 0.11s ease 0s;
-}
-a:hover{
-  color: rgb(0, 174, 239)!important;
-
-}
-ol, li {
-    margin: 0 0 0 17px;
-    list-style: none;
-    margin-bottom: 2%;
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAYAAADaxo44AAAAHElEQVQIW2NkWPf+PwMWwDiwEticBBRjxCHOAAA8og+xjYX3KgAAAABJRU5ErkJggg==);
-}
-
-
-
 .footer{
   font-family: 'Playfair Display', serif;
   color:#FCFBE3;
@@ -339,7 +335,13 @@ button,input[type="submit"]{
     left: 85px;
     
   }
+  .panel-button{
+    visibility: visible;
+  }
   
+  nav{
+    visibility: hidden;
+  }
 }
 @media screen and (min-width: 994px){
   meter{
@@ -355,6 +357,15 @@ button,input[type="submit"]{
   }
   meter[id="tickmarks1"]{
     margin-left: -65px;
+  }
+  #panel1{
+    display: none;
+  }
+  .panel-button{
+    visibility: hidden;
+  }
+  nav{
+    visibility: visible;
   }
 }
 
