@@ -1,94 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Test for your life</title>
-<meta charset="utf-8">
-<link rel="shortcut icon" href="pic/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="css/main.css" type="text/css" />
-<meta name = "viewport" content="width=device-width,initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="css/slider.css">
-<script src="./js/routeTests.js"></script>
-<link href="css/page.css" rel="stylesheet" />
-<link href="css/super-panel.css" rel="stylesheet" />
-<script src="js/super-panel.js"></script>
-    <header>
-      <a href="" class="logo">Лого</a>
-      <nav>
-          <ul class="topmenu">
-            <li><a href="">Главная</a></li>
-            <li><button type="button" class="btn main">
-                Тесты
-              </button>
-            
-              <ul class="submenu">
-                    <li><button type="button" class="test1 btn">
-                        Test#1
-                      </button></li>
-                      <li><button type="button" class="test2 btn">
-                        Test#2
-                      </button></li>
-                      <li><button type="button" class="test3 btn">
-                        Test#3
-                      </button></li>
-              </ul>
-            </li>
-            
-            <li><button type="button" class="btn "  >
-                Справочна информация
-            </button></li>
-            <li><button type="button" class="test3 btn">
-                Контакты
-              </button></li>
-              <span data-panel="panel1" class="panel-button"></span>
-          </ul>
-        </nav>
-    </header>
-    <div id="panel1">
-         <div id="vertical-nav">
-            <ul class="topmen">
-                  <ul><a href="">Главная</a></ul>
-                
-                  <ul>
-                    <button type="button" class="bt mai">
-                      Тесты
-                    </button>
-                  
-                    <li class="submen">
-                          <ul><button type="button" class="test1 bt">
-                              Test#1
-                            </button></ul>
-                            <ul><button type="button" class="test2 bt">
-                              Test#2
-                            </button></ul>
-                            <ul><button type="button" class="test3 bt">
-                              Test#3
-                            </button></ul>
-                    </li>
-                  </ul>
-                
-                
-                  <ul><button type="button" class="bt "  >
-                    Справочна информация
-                      </button></ul>
-                <ul><button type="button" class="friend bt">
-                    Контакты
-                  </button></ul>
-              </ul>
-        </div>
+  <title>Test for your life</title>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="./css/main.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">EmbedTest</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Домой
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/add-test">Создать тест
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="list-test">
+            Список тестов
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="/about">О проекте</a>
+        </li>
+      </ul>
     </div>
-<body >
-    
-  <div class="Test1">
-      <script>$('.Test1').load('html/test1.html');</script>
+  </nav>
+
+  <div class="systemDescription">
+    <p>
+        Вас приветствует система создания и встраивания тестов, данная система поможет вам при разработке ресурсов,
+      где необходимо тестирование или опрос. Вам не придется писать все самому, не нужно придумыть никакую логику,
+      все просто, бысто и легко.
+    </p>
+    <img class="indexPagePicture" src="./img/mainPagePicture.png">
   </div>
+  <div class="fieldForTest"></div>
 </body>
+
 </html>

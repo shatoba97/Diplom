@@ -1,0 +1,47 @@
+body {
+    background: #8080802b;
+    font-size: 21px !important
+}
+
+.conteiner {
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background: white;
+    border-radius: 15px;
+    width: 70%;
+    padding: 25px;
+    min-width: 600px;
+    max-width: 700px;
+    min-height: 150px;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    height: 35px;
+    background:  #fff;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.buttonWitAnswer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.answerOne, .answerThree{
+    min-width: 50px;
+}
+
+.answerTwo{
+    min-width: 190px;
+}
+
+.descriptionTest {
+    margin: auto 10%;
+    text-indent: 65px;
+}

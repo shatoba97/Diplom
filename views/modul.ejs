@@ -1,0 +1,101 @@
+<style>
+    body {
+        font-size: 22px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .conteiner {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttonWitAnswer {
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+    }
+
+    .answerButton {
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        height: 44px;
+        min-width: 100px;
+    }
+
+    .nameTest {
+        margin: 20px;
+        font-family: sans-serif, 'Times New Roman, serif';
+        font-size: 24px;
+
+    }
+</style>
+
+<p class="nameTest">Название теста:
+    <%= name%>
+</p>
+<div class="conteiner">
+    <p class="question"></p>
+    <div class="buttonWitAnswer">
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    let sum = 0;
+    let index = 0;
+    var price = <%- JSON.stringify(price) %>;
+    const name = <%- JSON.stringify(name) %>;
+    const length = price.length;
+    const question = <%- JSON.stringify(question) %>;
+    $('modal-title').text(name);
+
+    function fillFieldQuestion() {
+        $('.question').text(`${index+1}. ${question[index].text}`);
+        question[index].answer.forEach(function (result, i) {
+            const button = document.createElement('button');
+            button.className = `answerButton ${i}`;
+            button.value = price[index][i];
+            button.innerText = result;
+            $('.buttonWitAnswer').append(button);
+        })
+    }
+    fillFieldQuestion();
+    $(`.buttonWitAnswer`).on('click', '.answerButton', function (event) {
+        index += 1;
+        sum += parseInt(event.currentTarget.value);
+        $('.answerButton').remove();
+        if (length === index) {
+            var desqription = <%- JSON.stringify(desqription) %>;
+            desqription.forEach(function (val, i) {
+                if (sum >= parseInt(val['chapel-in']) && sum <= parseInt(val['chapel-out'])) {
+                    $('.modal-body').text(val.description)
+                    $('.modal').modal('show');
+                }
+            })
+        } else {
+
+            fillFieldQuestion();
+        }
+    })
+</script>

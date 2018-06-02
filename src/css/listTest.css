@@ -1,0 +1,36 @@
+body {
+    font-size: 21px !important
+}
+.nameTest {
+    display: flex;
+    flex-direction: column;
+}
+
+.test {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.testSearch {
+    width: 40%;
+    margin: auto;
+    margin-left: 30%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    height: 35px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.question {
+    min-width: 0;
+}
+
+.modal-content {
+  margin-top: 20%;
+}
